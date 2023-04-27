@@ -1,0 +1,148 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Lato:wght@300;400;700&family=Merriweather:wght@700&family=Poppins:wght@500;700&family=Simonetta&display=swap");
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Para que el scrolleo en la one page sea suave */
+  font-family: "Lato", sans-serif, "Poppins", sans-seri;
+  font-size: 18px;
+  line-height: 1.2;
+  scroll-behavior: smooth;
+}
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  max-width: 1200px;
+  min-width: 355px;
+  margin-top: 20px;
+  text-align: center;
+  margin: 20px auto;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 2px 2px rgb(228, 228, 228);
+  height: 90px;
+}
+
+.logo-eidos {
+  transition: 0.6s;
+}
+.logo-eidos:hover {
+  box-shadow: 3px 3px 10px 3px #af599e;
+  transition: 0.6s;
+  padding-left: 10px;
+}
+
+.titilo1 {
+  font-size: 36px;
+}
+.titulo2 {
+  font-size: 28px;
+}
+
+.nav-ul li a {
+  transition: 0.6s;
+}
+.nav-ul li a:hover {
+  color: #af599e;
+  transition: all 0.6s;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px 5px #af599e;
+  border-radius: 10px;
+  padding: 10px;
+}
+.nav {
+  width: 100vh;
+}
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.parte1-article img {
+  border-radius: 50%;
+  max-width: 400px;
+  min-width: 260px;
+}
+
+.parte1-article-BotonCV {
+  background-color: #af599e;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fbfbfb;
+  transition: 0.6s;
+  font-size: 20px;
+}
+.parte1-article-BotonCV:hover {
+  box-shadow: 1px 5px 10px 3px #af599e;
+  transition: 0.6s;
+  color: rgb(32, 32, 32);
+}
+.parte1-article p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.parte2-hablemos {
+  background-color: rgba(175, 89, 158, 0.3);
+  margin-top: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.parte2-hablemos p {
+  color: #0f0f0f;
+  margin-top: 20px;
+}
+
+.parte2-RSS {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.parte2-RSS li a img {
+  width: 50px;
+  transition: 0.6s;
+}
+
+.parte2-RSS li a img:hover {
+  box-shadow: 2px 2px 10px 5px #af599e;
+  transition: 0.4s;
+  width: 60px;
+}
+
+.pie-de-pagina {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #af599e;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fbfbfb;
+  font-size: 20px;
+}
